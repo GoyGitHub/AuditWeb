@@ -1,11 +1,9 @@
 <?php
+include('../../repositories/AuditorAuthentications.php');  // ✅ Enforces login
+requireAuditor();                      // ✅ Only admins
 include('../../database/dbconnection.php');
-session_start();
-if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'auditor') {
-    header("Location: LoginFunction.php");
-    exit();
-}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

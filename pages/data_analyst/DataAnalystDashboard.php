@@ -1,8 +1,9 @@
 <?php
-include('../../repositories/AdminAuthentications.php');  // ✅ Enforces login
-requireAdmin();                      // ✅ Only admins
+include('../../repositories/DataAnalystAuthentications.php');  // ✅ Enforces login
+requireDataAnalyst();                      // ✅ Only admins
 include('../../database/dbconnection.php');
 ?>
+
 
 
 <!DOCTYPE html>
@@ -152,38 +153,30 @@ include('../../database/dbconnection.php');
 
          <div class="sidebar__content">
             <div>
-               <h3 class="sidebar__title">MANAGE</h3>
-               <div class="sidebar__list">
-                  <a href="AdminDashboard.php" class="sidebar__link active-link">
-                     <i class="ri-dashboard-horizontal-fill"></i>
-                     <span>Dashboard</span>
-                  </a>
-                  <a href="AdminAuditDatabank.php" class="sidebar__link">
-                     <i class="ri-database-fill"></i>
-                     <span>UCX Data Bank</span>
-                  </a>
-                  <a href="#" class="sidebar__link">
-                     <i class="ri-ubuntu-fill"></i>
-                     <span>UCX Connect</span>
-                  </a>
-                  <a href="AdminAuditForm.php" class="sidebar__link">
-                     <i class="ri-survey-fill"></i>
-                     <span>Unify Audit System (UAS)</span>
-                  </a>
-                  <a href="AdminHrRecords.php" class="sidebar__link">
-                     <i class="ri-folder-history-fill"></i>
-                     <span>HR Records</span>
-                  </a>
-               </div>
-            </div>
+                <h3 class="sidebar__title">MANAGE</h3>
+                <div class="sidebar__list">
+                    <a href="DataAnalystDashboard.php" class="sidebar__link active-link">
+                        <i class="ri-dashboard-horizontal-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="DataAnalystAuditDatabank.php" class="sidebar__link">
+                        <i class="ri-database-fill"></i>
+                        <span>UCX Data Bank</span>
+                    </a>
+                    <a href="DataAnalystAnalytics.php" class="sidebar__link">
+                        <i class="ri-settings-3-fill"></i>
+                        <span>UCX Analytics</span>
+                    </a>
+                    <a href="DataAnalystHrRecords.php" class="sidebar__link">
+                        <i class="ri-folder-history-fill"></i>
+                        <span>HR Records</span>
+                    </a>
+                </div>
 
+                </div>
             <div>
                <h3 class="sidebar__title">TOOLS</h3>
                <div class="sidebar__list">
-                  <a href="AdminTools.php" class="sidebar__link">
-                     <i class="ri-settings-3-fill"></i>
-                     <span>Admin Tools</span>
-                  </a>
                   <a href="#" class="sidebar__link">
                      <i class="ri-mail-unread-fill"></i>
                      <span>My Messages</span>

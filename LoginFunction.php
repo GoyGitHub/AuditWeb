@@ -30,7 +30,7 @@ if ($role === 'admin') {
 } elseif ($role === 'supervisor') {
     header("Location: pages/supervisor/SupervisorDashboard.php");
 } elseif ($role === 'data_analyst') {
-    header("Location: pages/analyst/DataAnalystDashboard.php");
+    header("Location: pages/data_analyst/DataAnalystDashboard.php");
 } else {
     // optional fallback
     header("Location: dashboard.php");
@@ -175,7 +175,7 @@ if ($role === 'admin') {
                 <option value="admin">Administrator</option>
                 <option value="auditor">Auditor</option>
                 <option value="supervisor">Supervisor</option>
-                <option value="data analyst">Data Analyst</option>
+                <option value="data_analyst">Data Analyst</option>
             </select>
         </div>
         <input type="password" id="password" name="password" placeholder="Password" required>
